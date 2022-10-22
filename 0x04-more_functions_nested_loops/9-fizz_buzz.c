@@ -19,10 +19,9 @@ int main(void)
 			printf(" Buzz");
 		else
 		{
-			_putchar(i);
-			_putchar(' ');
+			printf(" %d", i);
 		}
 	}
 	_putchar('\n');
-
+	return (0);
 }
