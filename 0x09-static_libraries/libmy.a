@@ -1,2 +1,4 @@
 #!/bin/bash
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89
 ar -rc libmy.a main.h
+ranlib libmy.a
