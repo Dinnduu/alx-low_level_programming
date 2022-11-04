@@ -1,3 +1,4 @@
 #!/bin/bash
-ar rcs libmy.a *.o
+gcc -h main.h -o main.o
+ar rcs libmy.a main.o
 ranlib libmy.a
