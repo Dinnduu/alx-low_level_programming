@@ -1,3 +1,3 @@
 gcc -c *.c -o .o
 ar rcs libmy.a *.o
-ranlib linmy.a
+ranlib libmy.a
