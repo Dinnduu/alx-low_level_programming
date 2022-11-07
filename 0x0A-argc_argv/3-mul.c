@@ -10,9 +10,8 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i;
 
-	if (i == 2)
-		printf("%d\n", argv[1] * argv[2]);
-	else if (i < 2 && i > 2)
-		printf("%s\n", Error);
+	if (i = 3)
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	printf("%s\n", Error);
 	return (1);
 }
