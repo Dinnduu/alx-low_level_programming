@@ -4,21 +4,21 @@
 
 /**
  * sum_them_all - function that returns the sum of all its parameters
- * @n: input constant integer
+ * @n: number of arguments
  * Return: sum, if n == 0, 0
 */
 int sum_them_all(const unsigned int n, ...)
 {
 	if (n == 0)
 		return (0);
-	else
 	va_list p;
-	int i, sum;
+	unsigned int i;
+	int sum;
 
 	va_start (p, n);
 	sum = 0;
 	for (i = 0; i < n; i++)
-		sum += va_arg (p, const unsigned int);
+		sum += va_arg (p, int);
 	va_end (p);
 	return (sum);
 }
