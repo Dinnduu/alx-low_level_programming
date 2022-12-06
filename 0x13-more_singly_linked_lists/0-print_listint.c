@@ -7,26 +7,26 @@
 */
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes;
+	size_t nnodes = 0;
 	listint *temp;
 	listint *m;
 
-	for (nodes = 1)
+	for (nnodes = 1)
 	{
 		m = malloc(sizeof(listint));
-		m = new node;
+		m = new listint;
 		temp = m;
 		h = m;
 		printf("%d\n", m->n);
 	}
-	for (nodes = 2)
+	for (nnodes = 2)
 	{
 		m = malloc(sizeof(listint));
-		m = new node;
+		m = new listint;
 		temp->next = m;
 		temp = m;
 		printf("%d\n", m->n);
-		nodes++;
+		nnodes++;
 	}
-	return (nodes);
+	return (nnodes);
 }
